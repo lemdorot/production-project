@@ -1,13 +1,21 @@
 {
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit": {
+    " Impedit nemo accusantium non quia saepe nulla amet, repellat officia dicta laborum, harum itaque corporis aliquid atque laudantium asperiores animi quae ab?": ""
+  },
   "throw error": "throw error",
+  "toggle": "toggle",
+  "variant": "variant",
+  "Войти": "Войти",
   "Главная": "Main",
   "Главная страница": "Main page",
   "Короткий язык": "En",
   "О сайте": "About us",
   "Обновить страницу": "Reload page",
   "Перевод": "Translate",
+  "Переключатель": "Переключатель",
   "Переключить": "toggle",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Страница не найдена": "Page not found",
-  "Язык": "ййй"
+  "Язык": "ййй",
+  "курица": "курица"
 }
