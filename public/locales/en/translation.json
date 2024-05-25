@@ -10,5 +10,7 @@
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Страница не найдена": "Page not found",
   "Язык": "English",
-  "Войти": "Sign in"
+  "Войти": "Sign in",
+  "decrement": "decrement",
+  "increment": "increment"
 }
