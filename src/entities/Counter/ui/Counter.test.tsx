@@ -1,5 +1,5 @@
 import { userEvent } from '@storybook/testing-library';
-import { fireEvent, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { componentRouter } from 'shared/lib/tests/componentRender/componentRender';
 import { Counter } from './Counter';
 
