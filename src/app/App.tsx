@@ -1,16 +1,22 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames/ui/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { Modal } from 'shared/ui/Modal/Modal';
+import { useDispatch } from 'react-redux';
+import { userActions } from 'entities/User';
 import { AppRouter } from './providers/router';
 
 function App() {
 	const { theme } = useTheme();
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(userActions.initAuthData());
+	}, [dispatch]);
 
 	return (
-		<div className={classNames('app', {}, [])}>
+		<div className={classNames('app', {}, [theme])}>
 			<Suspense fallback="">
 				<Navbar />
 				<div className="content-page">
