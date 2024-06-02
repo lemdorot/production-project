@@ -8,8 +8,8 @@ module.exports = {
 		'plugin:react/recommended',
 		'airbnb',
 		'plugin:i18next/recommended',
-		"plugin:import/errors",
-		"plugin:import/typescript"
+		'plugin:import/errors',
+		'plugin:import/typescript',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -56,9 +56,11 @@ module.exports = {
 		'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
 		'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
 		'no-param-reassign': 'off',
+		'no-undef': 'off',
 	},
 	globals: {
 		__IS_DEV__: true,
+		__API__: true,
 	},
 	overrides: [
 		{
