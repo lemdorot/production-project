@@ -2,11 +2,11 @@ import { classNames } from 'shared/lib/classNames';
 import { useTranslation } from 'react-i18next';
 import cls from './{{pascalCase}}.module.scss';
 
-interface '{{ pascalCase }}Props' {
+interface {{pascalCase}}Props {
 	className ?: string;
 }
 
-export const {{ pascalCase }} = ({ className }: {{ pascalCase }}Props) => {
+export const {{ pascalCase }} = ({className}: {{pascalCase}}Props) => {
 	const { t } = useTranslation();
 
 	return (
