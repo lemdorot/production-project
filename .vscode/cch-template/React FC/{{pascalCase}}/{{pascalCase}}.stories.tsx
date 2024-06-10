@@ -2,11 +2,11 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { {{ pascalCase }} } from './{{ pascalCase }}';
 
 export default {
-	title: 'shared/componentName',
+	title: 'shared/{{ pascalCase }}',
 	component: {{ pascalCase }},
-argTypes: {
-	backgroundColor: { control: 'color' },
-},
+	argTypes: {
+		backgroundColor: { control: 'color' },
+	},
 } as ComponentMeta < typeof {{ pascalCase }}>;
 
 const Template: ComponentStory<typeof {{ pascalCase }}> = (args) => <{{ pascalCase }} { ...args } />;

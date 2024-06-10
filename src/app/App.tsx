@@ -1,6 +1,5 @@
 import { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames/ui/classNames';
-import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,7 +7,6 @@ import { getUserInited, userActions } from 'entities/User';
 import { AppRouter } from './providers/router';
 
 function App() {
-	const { theme } = useTheme();
 	const dispatch = useDispatch();
 	const inited = useSelector(getUserInited);
 
@@ -17,7 +15,7 @@ function App() {
 	}, [dispatch]);
 
 	return (
-		<div className={classNames('app', {}, [theme])}>
+		<div className={classNames('app', {}, [])}>
 			<Suspense fallback="">
 				<Navbar />
 				<div className="content-page">
