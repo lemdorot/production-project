@@ -9,7 +9,7 @@ export default {
 	},
 } as ComponentMeta < typeof {{ pascalCase }}>;
 
-const Template: ComponentStory<typeof {{ pascalCase }}> = (args) => <{{ pascalCase }} { ...args } />;
+const Template: ComponentStory<typeof {{ pascalCase }}> = (args) => <{{ pascalCase }} {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
