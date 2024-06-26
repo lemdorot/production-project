@@ -1,10 +1,9 @@
-import { classNames } from 'shared/lib/classNames';
 import React, {
 	MutableRefObject,
 	ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { useTheme } from 'app/providers/ThemeProvider';
-import { Mods } from 'shared/lib/classNames/ui/classNames';
+import { Mods, classNames } from 'shared/lib/classNames/classNames';
 import cls from './Modal.module.scss';
 import { Portal } from '../Portal/Portal';
 

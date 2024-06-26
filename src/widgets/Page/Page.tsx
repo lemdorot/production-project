@@ -1,4 +1,3 @@
-import { classNames } from 'shared/lib/classNames';
 import {
 	MutableRefObject, ReactNode, UIEvent, memo, useRef,
 } from 'react';
@@ -10,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useThrottle } from 'shared/lib/hooks/useThrottle/useThrottle';
+import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Page.module.scss';
 
 interface PageProps {

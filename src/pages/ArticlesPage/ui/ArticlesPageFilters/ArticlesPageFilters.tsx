@@ -1,5 +1,4 @@
-import { classNames } from 'shared/lib/classNames';
-import { memo, useCallback, useMemo } from 'react';
+import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
 	ArticleSortField,
@@ -16,6 +15,7 @@ import { SortOrder } from 'shared/types';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
 import { TabItem, Tabs } from 'shared/ui/Tabs/Tabs';
 import { ArticleType } from 'entities/Article/model/types/article';
+import { classNames } from 'shared/lib/classNames/classNames';
 import {
 	getArticlesPageOrder,
 	getArticlesPageSearch,
